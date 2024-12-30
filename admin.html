@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Titel van het administratie menu -->
+        <h1>Administratie menu</h1>
+
+        <!-- Sectie: Personen beheren -->
+        <div class="section">
+            <h2>Personen beheren</h2>
+            <ul id="personList" class="person-list">
+                <!-- Dynamische lijst met personen -->
+            </ul>
+            <input id="nameInput" type="text" placeholder="Naam toevoegen">
+            <button onclick="addPerson()">Toevoegen</button>
+        </div>
+
+        <!-- Sectie: Prijzen aanpassen -->
+        <div class="section">
+            <h2>Prijzen aanpassen</h2>
+            <label for="beerPrice">Bier (€):</label>
+            <input id="beerPrice" type="number" step="0.01">
+            <label for="sodaPrice">Overige dranken (€):</label>
+            <input id="sodaPrice" type="number" step="0.01">
+            <button onclick="updatePrices()">Opslaan</button>
+        </div>
+
+        <!-- Sectie: Gegevens resetten -->
+        <div class="section">
+            <h2>Gegevens resetten en uploaden</h2>
+            <button class="reset-button" onclick="resetAllData()">Reset alle gegevens</button>
+        </div>
+
+        <div class="export-btn">
+            <button onclick="exportToCSV()">Exporteer naar CSV</button>
+        </div>
+
+        <!-- Terug naar Home knop -->
+        <div class="section">
+            <button class="back-button" onclick="navigateToHome()">Terug naar Home</button>
+        </div>
+
+        <!-- Message -->
+        <div id="message" class="message">
+            <div class="message-content">
+              <span class="closebtn" onclick="closeMessage()">&times;</span>
+              <strong>Bericht:</strong> Dit is een belangrijk bericht.
+            </div>
+          </div>
+          
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zie hier uw bijdrage aan Keet Wûns</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1>De tab van: <span id="personName"></span></h1>
+        <div>
+            <p>Bier (€1): <span id="beerCount">0</span>
+                <button onclick="incrementDrink('beer')">+</button>
+                <button onclick="decrementDrink('beer')">-</button>
+            </p>
+            <p>Overig drinken (€2): <span id="sodaCount">0</span>
+                <button onclick="incrementDrink('soda')">+</button>
+                <button onclick="decrementDrink('soda')">-</button>
+            </p>
+            <p>Totaal: €<span id="totalCost">0.00</span></p>
+        </div>
+        <button onclick="navigateToHome()">Terug naar hoofdpagina</button>
+        <div id="message" style="display: none;"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

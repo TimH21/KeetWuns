@@ -1,0 +1,328 @@
+/* Algemene opmaak voor de gehele website */
+body {
+    font-family: 'Roboto', sans-serif; /* Modern lettertype */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Zachtgrijze achtergrondkleur */
+    color: #333;
+    text-align: center;
+}
+
+/* Koptekst van de hoofdpagina */
+h1 {
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Stijlen voor knoppen */
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}
+
+input:focus {
+    border: 2px solid #3498db;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+
+/* Grid voor knoppen op de hoofdpagina */
+.button-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Ruimte tussen knoppen */
+    margin: 20px;
+}
+
+.button-grid button {
+    width: 120px;
+    height: 120px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Drinken teller en knoppen */
+.drink-counter {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drink-counter button {
+    margin: 0 15px;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+/* Totaal kosten overzicht */
+.cost-summary {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Meldingen voor succesvolle acties */
+
+
+/* Lijst van personen op de hoofdpagina */
+.person-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.person-list li {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #ecf0f1;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Resetknop */
+.reset-button {
+    background-color: #e74c3c;
+}
+
+.reset-button:hover {
+    background-color: #c0392b;
+}
+
+/* Layout container */
+#container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Specifieke stijlen voor de person.html pagina */
+#personName {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+#beerCount, #sodaCount, #totalCost {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #2c3e50;
+}
+
+#totalCost {
+    font-size: 1.5em;
+    color: #e74c3c;
+}
+
+/* Extra stijl voor de terugknop */
+button.back-button {
+    background-color: #8e44ad;
+    color: white;
+}
+
+button.back-button:hover {
+    background-color: #732d91;
+}
+
+/* Stijlen voor de administratie-sectie */
+.admin-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Titel van de secties */
+.admin-container h2 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* Formulieren en inputvelden */
+.admin-container input[type="text"], 
+.admin-container input[type="number"] {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin: 10px 5px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+.admin-container input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Knoppen */
+.admin-container button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-container button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Waarschuwingen en resetknoppen */
+.admin-container .reset-button {
+    background-color: #e74c3c;
+}
+
+.admin-container .reset-button:hover {
+    background-color: #c0392b;
+}
+
+/* Secties binnen de container */
+.admin-container .section {
+    margin-bottom: 30px;
+}
+
+.admin-container .section:last-child {
+    margin-bottom: 0;
+}
+
+/* Terug naar Home knop */
+.admin-container .back-button {
+    background-color: #8e44ad;
+}
+
+.admin-container .back-button:hover {
+    background-color: #732d91;
+}
+
+/* Stijl voor het bericht */
+.message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.5s ease, top 0.5s ease;
+    font-size: 16px;  /* Standaard tekstgrootte */
+  }
+  
+  /* Het tonen van het bericht */
+  .message.show {
+    opacity: 1;
+    top: 20px;
+  }
+  
+  /* Specifieke stijl voor succes (groen) */
+  .message.success {
+    background-color: #27ae60; /* Groene achtergrond */
+    color: white; /* Witte tekst voor succes */
+    font-size: 18px;  /* Grotere tekst voor succes */
+  }
+  
+  /* Specifieke stijl voor foutmeldingen (rood) */
+  .message.error {
+    background-color: #e74c3c; /* Rode achtergrond voor foutmeldingen */
+    color: white; /* Witte tekst bij foutmeldingen */
+    font-size: 24px;  /* Grote tekst voor foutmeldingen */
+    padding: 25px;  /* Extra padding voor grotere foutmelding */
+    width: 90%;  /* Grotere breedte voor foutmeldingen */
+    max-width: 800px;
+  }
+  
+  /* Stijl voor de sluitknop */
+  .closebtn {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .closebtn:hover {
+    color: #000;
+  }
+  
+  
+
+@media (max-width: 768px) {
+    .admin-container {
+        padding: 20px;
+    }
+
+    .section {
+        text-align: left;
+    }
+
+    input, button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* De knop zelf groen maken */
+button.export-btn {
+    background-color: #28a745; /* Groene kleur */
+    color: white; /* Tekst in het wit */
+    border: none; /* Geen rand */
+    padding: 10px 20px; /* Wat padding voor een mooie afmeting */
+    font-size: 16px; /* Vergroot de tekst iets */
+    cursor: pointer; /* Verandert de cursor naar een pointer */
+    border-radius: 5px; /* Hoeken iets afronden */
+    transition: background-color 0.3s ease; /* Voeg een overgang toe voor hover effect */
+}
+
+/* Hover-effect om de knop donkerder te maken wanneer je eroverheen beweegt */
+button.export-btn:hover {
+    background-color: #218838; /* Donkerder groen */
+}
+
+
